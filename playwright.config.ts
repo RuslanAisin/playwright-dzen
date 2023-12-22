@@ -9,9 +9,9 @@ export default defineConfig({
   reporter: "allure-playwright",
   timeout: 2 * 60 * 1000,
   use: {
-    launchOptions: {
-      args: ["--start-maximized"],
-    },
+    // launchOptions: {
+    //   args: ["--start-maximized"],
+    // },
     baseURL: "https://dzen.ru",
     screenshot: "only-on-failure",
     actionTimeout: 30000,
@@ -26,9 +26,9 @@ export default defineConfig({
   projects: [
     {
       name: "chromium",
-      use: {
-        viewport: { width: 1920, height: 1080 },
-      },
+      // use: {
+      //   viewport: { width: 1920, height: 1080 },
+      // },
     },
   ],
 });
