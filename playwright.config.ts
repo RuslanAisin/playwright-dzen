@@ -20,7 +20,7 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     video: {
       mode: "on",
-      size: { width: 1920, height: 1080 },
+      // size: { width: 1920, height: 1080 },
     },
   },
   projects: [
