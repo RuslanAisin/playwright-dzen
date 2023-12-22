@@ -25,10 +25,13 @@ export default defineConfig({
   },
   projects: [
     {
-      name: "chromium",
-      // use: {
-      //   viewport: { width: 1920, height: 1080 },
-      // },
-    },
+      name: 'chromium',
+      use: {  
+        ...devices['Desktop Chromium'],
+        viewport: null,
+        launchOptions: {
+          args: ["--start-maximized"]
+      } 
+      }, 
   ],
 });
