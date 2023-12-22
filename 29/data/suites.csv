@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 22 21:08:28 GMT 2023","Fri Dec 22 21:08:55 GMT 2023","27883","","dzen.spec.ts","YaDzen Test","","","dzen",""
