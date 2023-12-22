@@ -8,3 +8,4 @@ RUN npm install playwright-video @ffmpeg-installer/ffmpeg
 RUN npx @playwright/test install
 RUN npx playwright install-deps
 RUN npx playwright test || exit 1
+RUN echo success
