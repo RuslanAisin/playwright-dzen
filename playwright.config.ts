@@ -23,15 +23,15 @@ export default defineConfig({
       // size: { width: 1920, height: 1080 },
     },
   },
-  projects: [
+   projects: [
     {
-      name: 'chromium',
-      use: {  
-        ...devices['Desktop Chromium'],
+      use: {
+        ...devices["Desktop Chromium"],
         viewport: null,
         launchOptions: {
-          args: ["--start-maximized"]
-      } 
-      }, 
+          args: ["--start-maximized"],
+        },
+      },
+    },
   ],
 });
