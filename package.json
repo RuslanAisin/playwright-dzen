@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "playwrightRun": "npx playwright test",
+    "allure:report": "npx allure generate ./allure-results --clean",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist test-results rmdir /q /s test-results",
+    "pretest": "npm run allure:clear",
+    "test": "npm run playwrightRun || npm run posttest",
+    "posttest": "npm run allure:report && npx allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4",
+    "allure-commandline": "^2.25.0",
+    "allure-playwright": "^2.10.0"
+  }
+}
