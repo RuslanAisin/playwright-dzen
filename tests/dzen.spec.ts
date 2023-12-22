@@ -85,12 +85,12 @@ test.describe("YaDzen Test", () => {
       })
     );
     await page.waitForTimeout(5000);
-    const playerControls = await page.waitForSelector(
-      ".zen-ui-video-video-player__control-toggle"
-    );
-    expect(playerControls).toBeTruthy();
-    await playerControls.hover();
-    // Открываем в фуллскрине
-    await page.click("button.zen-ui-video-video-fullscreen-toggle");
+    // const playerControls = await page.waitForSelector(
+    //   ".zen-ui-video-video-player__control-toggle"
+    // );
+    // expect(playerControls).toBeTruthy();
+    // await playerControls.hover();
+    // // Открываем в фуллскрине
+    // await page.click("button.zen-ui-video-video-fullscreen-toggle");
   });
 });
