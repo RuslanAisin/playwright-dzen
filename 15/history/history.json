@@ -1,1 +1,0 @@
-{"db8802ee0950c179943950e24bffd49f:5bd835b0d6b1d4ada3b9f0db936e82c8":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"d2184cbea19884b6","reportUrl":"https://RuslanAisin.github.io/playwright-dzen/15//#testresult/d2184cbea19884b6","status":"passed","time":{"start":1703271771977,"stop":1703271781374,"duration":9397}}]}}
