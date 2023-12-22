@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 22 20:33:25 GMT 2023","Fri Dec 22 20:33:53 GMT 2023","27960","chromium","dzen.spec.ts","YaDzen Test","","","dzen",""
