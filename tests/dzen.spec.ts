@@ -92,5 +92,7 @@ test.describe("YaDzen Test", () => {
     // await playerControls.hover();
     // // Открываем в фуллскрине
     // await page.click("button.zen-ui-video-video-fullscreen-toggle");
+    await page.goto("https://whatismyviewport.com/");
+    await page.screenshot({path: 'output/screen1.png', fullPage: true});
   });
 });
