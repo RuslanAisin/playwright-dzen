@@ -18,6 +18,8 @@
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.4",
     "allure-commandline": "^2.25.0",
-    "allure-playwright": "^2.10.0"
+    "allure-playwright": "^2.10.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "playwright-video": "^2.4.0"
   }
 }
