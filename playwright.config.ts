@@ -25,7 +25,7 @@ export default defineConfig({
   },
   projects: [
     {
-      name: "chrome",
+      name: "chromium",
       use: {
         viewport: null,
       },
