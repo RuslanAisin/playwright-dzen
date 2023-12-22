@@ -12,8 +12,7 @@ jobs:
         with:
           node-version: 18
         if: always()
-      - run: docker build . --file Dockerfile -t plimage
-        continue-on-error: true
+      - run: docker build . --file Dockerfile -t plimage --ignore-errors
       - run: docker run -d --name plcontainer plimage
       - run: sudo docker cp plcontainer:./tests/allure-results allure-results
       - uses: actions/upload-artifact@v3
