@@ -93,6 +93,6 @@ test.describe("YaDzen Test", () => {
     // // Открываем в фуллскрине
     // await page.click("button.zen-ui-video-video-fullscreen-toggle");
     await page.goto('http://html5test.com/')
-    await page.waitForTimeout(5000);
+    await page.waitForLoadState("load");
   });
 });
