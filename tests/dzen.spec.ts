@@ -90,7 +90,9 @@ test.describe("YaDzen Test", () => {
     );
     expect(playerControls).toBeTruthy();
     await playerControls.hover();
+    await page.waitForTimeout(5000);
     // Открываем в фуллскрине
     await page.click("button.zen-ui-video-video-fullscreen-toggle");
+    await page.waitForTimeout(5000);
   });
 });
