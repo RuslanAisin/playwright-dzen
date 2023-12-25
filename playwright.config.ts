@@ -25,8 +25,8 @@ export default defineConfig({
   },
    projects: [
     {
-      use: {
-        ...devices["Desktop Chromium"],
+      use: { ...devices["Desktop Chrome"], 
+        channel: 'chrome',
         viewport: { width: 1920, height: 1080 },
         launchOptions: {
           args: ["--start-maximized"],
