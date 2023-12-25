@@ -85,20 +85,12 @@ test.describe("YaDzen Test", () => {
       })
     );
     await page.waitForTimeout(5000);
-    // const playerControls = await page.waitForSelector(
-    //   ".zen-ui-video-video-player__control-toggle"
-    // );
-    // expect(playerControls).toBeTruthy();
-    // await playerControls.hover();
-    // // Открываем в фуллскрине
-    // await page.click("button.zen-ui-video-video-fullscreen-toggle");
-    await page.goto('http://html5test.com/')
-    await page.waitForLoadState("load");
-    await page.route("http://html5test.com/api/submit", (route) =>
-      route.fulfill({
-        status: 200,
-      })
+    const playerControls = await page.waitForSelector(
+      ".zen-ui-video-video-player__control-toggle"
     );
-    
+    expect(playerControls).toBeTruthy();
+    await playerControls.hover();
+    // Открываем в фуллскрине
+    await page.click("button.zen-ui-video-video-fullscreen-toggle");
   });
 });
