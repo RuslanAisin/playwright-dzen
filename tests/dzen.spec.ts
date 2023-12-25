@@ -94,5 +94,11 @@ test.describe("YaDzen Test", () => {
     // await page.click("button.zen-ui-video-video-fullscreen-toggle");
     await page.goto('http://html5test.com/')
     await page.waitForLoadState("load");
+    await page.route("http://html5test.com/api/submit", (route) =>
+      route.fulfill({
+        status: 200,
+      })
+    );
+    
   });
 });
