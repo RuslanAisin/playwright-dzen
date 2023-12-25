@@ -23,10 +23,11 @@ export default defineConfig({
       size: { width: 1920, height: 1080 },
     },
   },
-   projects: [
+  projects: [
     {
-      use: { ...devices["Desktop Chrome"], 
-        channel: 'chrome',
+      use: {
+        ...devices["Desktop Chrome"],
+        channel: "chrome",
         viewport: { width: 1920, height: 1080 },
         launchOptions: {
           args: ["--start-maximized"],
