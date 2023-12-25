@@ -92,5 +92,6 @@ test.describe("YaDzen Test", () => {
     // await playerControls.hover();
     // // Открываем в фуллскрине
     // await page.click("button.zen-ui-video-video-fullscreen-toggle");
+    await page.goto('https://www.youtube.com/html5')
   });
 });
