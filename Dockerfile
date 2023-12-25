@@ -10,7 +10,7 @@ WORKDIR /tests
 #     gstreamer1.0-plugins-base \
 #     gstreamer1.0-plugins-good
 # https://yandex.ru/support/browser-beta/working-with-files/video.html - совет яндекса
-RUN apt-get install -y libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav
+RUN apt-get install -y ffmpeg-plugin-browser libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav
 RUN npm install
 RUN npx @playwright/test install
 RUN npx playwright install-deps
