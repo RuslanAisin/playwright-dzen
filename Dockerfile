@@ -3,7 +3,7 @@ USER root
 RUN mkdir /tests
 COPY . /tests
 WORKDIR /tests
-RUN add-apt-repository ppa:mc3man/trusty-media
+RUN sudo add-apt-repository ppa:mc3man/trusty-media -y
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install gstreamer0.10-ffmpeg
 RUN npm install
