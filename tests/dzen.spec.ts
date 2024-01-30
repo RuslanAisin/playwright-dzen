@@ -52,7 +52,7 @@ test.describe("YaDzen Test", () => {
     const color = await videoHover.evaluate((e) => {
       return window.getComputedStyle(e).getPropertyValue("background-color");
     });
-    expect(color).toBe("rgba(0, 0, 0, 0.06)");
+    expect(color).toBe("rgb(232, 234, 237)");
     // Переходим в Видео
     await page.click('aside [aria-label="Видео"]');
     await page.waitForLoadState("load");
